@@ -4,13 +4,58 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Nationaler Zukunftstag | Mädchen-Informatik-los!">
-    <title>Hallo NZT</title>
+    <meta name="description" content="Impressionen vom Nationalen Zukunftstag – Mädchen-Informatik-los! in Zürich.">
+    <meta name="theme-color" content="#f5f3ee">
+    <title>Ein Tag voller Ideen | Mädchen-Informatik-los!</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="gallery.js" defer></script>
 </head>
 
 <body>
-    <h1>Hallo Nationaler Zukunftstag <br> Mädchen-Informatik-los!</h1>
+    <header class="site-header">
+        <a class="wordmark" href="#" aria-label="Mädchen-Informatik-los! – zur Startseite">
+            <span class="wordmark-mark" aria-hidden="true">M<span>!</span></span>
+            <span>Mädchen-Informatik-los!</span>
+        </a>
+        <span class="event-label">Nationaler Zukunftstag <span aria-hidden="true">·</span> Zürich</span>
+    </header>
+
+    <main>
+        <section class="intro" aria-labelledby="page-title">
+            <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> Einblicke &amp; Augenblicke</p>
+            <h1 id="page-title">Ein Tag voller<br><span>Ideen.</span></h1>
+            <p class="intro-copy">Neugier kennt keine Grenzen. Ein paar Eindrücke von einem Tag, an dem aus Fragen neue Möglichkeiten wurden.</p>
+            <p class="photo-count"><span id="photo-count">17</span> Momente <span aria-hidden="true">↘</span></p>
+        </section>
+
+        <section class="gallery-section" aria-label="Fotogalerie">
+            <div class="gallery" id="gallery"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>Neugierig bleiben. Zukunft gestalten.</span>
+        <span>Nationaler Zukunftstag <span aria-hidden="true">·</span> Zürich</span>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Bildansicht">
+        <button class="lightbox-close" type="button" aria-label="Bildansicht schließen" data-close>
+            <span aria-hidden="true">×</span>
+        </button>
+        <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Vorheriges Bild" data-prev>
+            <span aria-hidden="true">←</span>
+        </button>
+        <figure class="lightbox-figure">
+            <img class="lightbox-image" id="lightbox-image" alt="">
+            <figcaption class="lightbox-caption">
+                <span id="lightbox-title"></span>
+                <span class="lightbox-hint">Mit ← → wechseln <span aria-hidden="true">·</span> Esc schliessen</span>
+            </figcaption>
+        </figure>
+        <button class="lightbox-arrow lightbox-next" type="button" aria-label="Nächstes Bild" data-next>
+            <span aria-hidden="true">→</span>
+        </button>
+    </dialog>
 </body>
 
 </html>
