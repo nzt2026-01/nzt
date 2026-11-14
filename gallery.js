@@ -79,7 +79,10 @@ lightbox.addEventListener("click", (event) => {
 });
 
 lightbox.addEventListener("keydown", (event) => {
-    if (event.key === "ArrowLeft") {
+    if (event.key === "Escape") {
+        event.preventDefault();
+        lightbox.close();
+    } else if (event.key === "ArrowLeft") {
         event.preventDefault();
         changePhoto(-1);
     } else if (event.key === "ArrowRight") {
